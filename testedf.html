@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var n1;
+            $("button").click(function() {
+                n1 = parseInt($("input").val())
+                var i;
+                for ( i = 0; i <= n1; i++) {
+                   $("div").text(i) 
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+   <input type="text">
+   <button>clicar</button>
+   <div></div> 
+</body>
+</html>
+[]

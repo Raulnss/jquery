@@ -1,0 +1,20 @@
+:root{
+    --menu-size: 250px
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+}
+.content{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}

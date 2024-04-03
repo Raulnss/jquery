@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fluxograma de operações</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var n2
+			var op
+			var resp1
+			var resp2
+			var resp3
+			var resp4
+			var resp5
+			$("button").click(function() {
+               n1 = parseInt($("#n1").val())
+			   n2 = parseInt($("#n2").val())
+			   op = $("#op").val()
+			   resp1=n1+n2
+			   resp2=n1-n2
+			   resp3=n1*n2
+			   resp4=n1/n2
+			   resp5=n1%n2
+               if (op==mais) {
+               	    $("div").text("a soma è "+resp1)
+               } if (op== menos) {
+               		$("div").text("a subtração è "+resp2)
+               } if (op== multiplicar) {
+               		$("div").text("a multiplicação è "+resp3)
+               } if (op== dividir) {
+               		$("div").text("a divisão è "+resp4)
+               } if (op== resto) {
+               		$("div").text("o resto de divisão è "+resp5)
+               }
+			})
+		})
+	</script>
+</head>
+<body>
+	<h1>não funciona</h1>
+	numero<br>
+<input type="text" id="n1"><br>
+nome da operação<br>
+<input type="text" id="op"><br>
+numero<br>
+<input type="text" id="n2"><br>
+<button>calcular</button>
+<div></div>
+</body>
+</html>

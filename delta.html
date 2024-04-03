@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          var a 
+          var b 
+          var c
+          var resp
+          $("button").click(function () {
+            a = parseInt($("#a").val())
+            b = parseInt($("#b").val())
+            c = parseInt($("#c").val())
+            resp=(b*b)-4*a*c
+            $("div").text(resp)
+          })
+        })
+    </script>
+</head>
+<body>
+    <h1>delta</h1>
+    incira a b c sem esquecer o sinal se for negativo <br>
+    <input type="text" id="a" placeholder="ax^2">
+    <input type="text" id="b" placeholder="bx">
+    <input type="text" id="c" placeholder="c">
+    <button>calcular</button>
+    <div></div>
+</body>
+</html>

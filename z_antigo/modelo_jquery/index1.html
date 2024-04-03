@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var texto
+			$("button").click(function() {
+				texto = $("#texto").val()
+				$("div").text(texto)
+				$("#texto").val("")
+				// alert("nada")
+				// prompt("tudo")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="texto"><br>
+<button>clicar</button>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma nome data nascimento</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var nome 
+			var data
+			var resp
+			$("button").click(function() {
+				nome = $("#no").val();
+				data = parseInt($("#n1").val());
+				resp=2023-data-1;
+				$("div").text("seu nome é "+nome+" e sua idade é "+resp);
+				$("#no").val("");
+				$("#n1").val("");
+			})
+		})
+	</script>
+</head>
+<body>
+	<h1>coloque nome e idade e aparecera nome e ano de nascimento</h1>
+	nome
+<input type="text" id="no"><br>
+idade
+<input type="number" id="n1"><br>
+<button>clicar</button>
+<div></div>
+</body>
+</html>

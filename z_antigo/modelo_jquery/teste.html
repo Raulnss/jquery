@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var n2
+			var resp
+			var resp2
+			var resp3
+			var resp4
+			var resp5
+			$("button").click(function() {
+				n1 = parseInt($("#texto1").val() )
+				n2 = parseInt($("#texto2").val() )
+				resp=n1+n2
+				$("div").text(resp)
+				resp2=n1-n2
+				$("div").text(resp2)
+				resp3=n1*n2
+				$("div").text(resp3)
+				resp4=n1/n2
+				$("div").text(resp4)
+				resp5=n1%n2
+				$("div").text(resp5)
+				$("#texto1").val("")
+				$("#texto2").val("")
+			});
+		});
+	</script>
+	<title>mjh</title>
+</head>
+<body>
+<input type="number" id="texto1">
+<input type="number" id="texto2"><br>
+<button>somar</button><br>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma comverter reais em dolar</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var resp
+			$("button").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1/5,20
+				$("div").text("você tem "+resp+" dolar")
+				$("#n1").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="n1">
+<button>converter</button>
+<div></div>
+</body>
+</html>

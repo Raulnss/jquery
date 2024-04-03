@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fluxograma par ou impar</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var resp
+			$("button").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1%2
+				if (resp==0) {
+					$("div").text("o numero è par")
+				}else {
+					$("div").text("o numero è impar")
+				}
+				$("#n1").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+incira seu numero e veja se ele è impar ou par<br>
+<input type="text" id="n1">
+<button>ver</button>
+<div></div> 
+</body>
+</html>

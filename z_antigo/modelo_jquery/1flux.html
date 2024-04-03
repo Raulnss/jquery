@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma nome</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var nome
+			var sobrenome
+			var resp
+			$("button").click(function() {
+				nome = $("#no").val()
+				sobrenome = $("#so").val()
+				resp=nome+""+sobrenome
+				$("div").text(resp)
+				$("#no").val("")
+				$("#so").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="no"><br>
+<input type="text" id="so"><br>
+<button>clicar</button>
+<div></div>
+</body>
+</html>

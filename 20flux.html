@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>fluxograma inversão de variaveis</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+       $(document).ready(function() {
+        var n1
+        var n2
+        var n3
+        $("button").click(function() {
+            n1 = parseInt($("#n1").val())
+            n2 = parseInt($("#n2").val())
+            n3=n1
+            n1=n2
+            n2=n3
+            $("#1").text("agora a primeira è "+n1)
+            $("#2").text("agora o segundo è "+n2)
+        })
+       })
+    </script>
+</head>
+<body>
+    <h1>fluxograma de troca de variavel nao funciona</h1>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <button>clicar</button>
+    <div id="1"></div>
+    <div id="2"></div>
+</body>
+</html>

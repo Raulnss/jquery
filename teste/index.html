@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var add = 100;
+            var meno = 100;
+            var a = 1;
+            $(document).on( "click","#red1",function () {
+                   $(this).parent().css("color", "red"); 
+            });
+            $(document).on( "click","#green",function () {
+                $(this).parent().css("color", "green");
+            });
+            $(document).on( "click","#blue",function () {
+                $(this).parent().css("color", "blue");
+            });
+            $(document).on( "click","#add",function () {
+                add++;
+                $(this).parent().css({"font-size": add + "%"});
+            });
+            $(document).on( "click","#meno",function () {
+                meno--;
+                $(this).parent().css({"font-size": meno + "%"});
+            });
+            $("#exibi").click(function () {
+                var n1 = $("#n1").val();
+                var red = "<button class="+a+" id='red1'>vermelho</button>";
+                var green = "<button class="+a+" id='green'>verde</button>";
+                var blue = "<button class="+a+" id='blue'>azul</button>";
+                var bu = "<button class="+a+" id='add'>mais</button>";
+                var menos = "<button class="+a+" id='meno'>menos</button>";
+                if (n1.length == 0) {
+                $("#tets2").html("escreva algo")
+                } else {
+                  $("#tets").prepend("<div><p id="+a+">" + n1 + "</p>"+red+" "+green+" "+blue+" "+bu+" "+menos+"</div>");
+                  $("#tets2").html(" ")
+                  $("#n1").val("");
+
+
+
+
+
+
+
+
+
+                  
+                }
+            });
+            // $("button").click(function(){
+            //  $("li").each(function(){
+            //    alert($(this).text())
+            //  });
+            //  $(document).on( "click",".button",function () {
+            //     // $("p").attr(a) == $("button").attr(a);
+            //     alert("tudo")
+            //     if ($("p").attr("id") == $(".button").attr("class")) {
+            //         alert("nada")
+            //     }
+            //     ;
+                // $("p").css({"font-size": meno + "%"});
+            // });
+           });
+            // $('#red1').click(function() {
+            //     $(a).each(function(index , element) {
+            //   $(this).attr('data-id', index);
+            // })
+            //   var paragraphId = $(this).data('id');
+            //   $(a+'[data-id="' + paragraphId + '"]').css('color', 'red');
+            // });
+        // });
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="n1">
+    <button id="exibi">exibir</button>
+    <div id="tets"></div>
+    <div id="tets2"></div>
+    <!-- <div>
+        <button id='red1'>red</button>
+        <button id='green'>green</button>
+        <button id='blue'>blue</button><br>
+        <button id='add'>+</button>
+        <button id='meno'>-</button>
+    </div> -->
+</body>
+</html>

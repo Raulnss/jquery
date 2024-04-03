@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma de area e petrimetro</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1 
+			var resp
+			var resp1
+			$("#area").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1*n1
+				$("#are").text(resp)
+				$("#n1").val("")
+			})
+			$("#perimetro").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp1=n1+n1+n1+n1
+				$("#peri").text(resp1)
+				 $("#n1").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="n1">
+<button id="area">area</button>
+<button id="perimetro">perimetro</button>
+<div id="are"></div>
+<div id="peri"></div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculadora</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var n2
+			var resp
+			var resp2
+			var resp3
+			var resp4
+			var resp5
+			$("#somar").click(function() {
+				n1 = parseInt($("#n1").val())
+				n2 = parseInt($("#n2").val())
+				resp=n1+n2
+                $("#mais").text(n1+"+"+n2+"="+resp)
+                $("#n1").val("")
+                $("#n2").val("")   
+			})
+			$("#sub").click(function() {
+				n1 = parseInt($("#n1").val())
+				n2 = parseInt($("#n2").val())
+				resp2=n1-n2
+				$("#tir").text(n1+"-"+n2+"="+resp2)
+				$("#n1").val("")
+                $("#n2").val("")  
+			})
+			$("#mul").click(function() {
+			n1 = parseInt($("#n1").val())
+			n2 = parseInt($("#n2").val())
+				resp3=n1*n2
+				$("#ti").text(n1+"*"+n2+"="+resp3)
+				$("#n1").val("")
+                $("#n2").val("")  	
+			})
+			$("#di").click(function() {
+			n1 = parseInt($("#n1").val())
+			n2 = parseInt($("#n2").val())
+				resp4=n1/n2
+				$("#vi").text(n1+"/"+n2+"="+resp4)
+				$("#n1").val("")
+                $("#n2").val("")  	
+			})
+			$("#res").click(function() {
+			n1 = parseInt($("#n1").val())
+			n2 = parseInt($("#n2").val())
+				resp5=n1%n2
+				$("#to").text(n1+"%"+n2+"="+resp5)
+				$("#n1").val("")
+                $("#n2").val("")  
+			})
+		})
+	</script>
+</head>
+<body>
+	<center>
+		<center><h1>calculadora</h1></center>
+<input type="number" id="n1">
+<input type="number" id="n2">
+<button id="somar">somar</button>
+<button id="sub">subtrair</button>
+<button id="mul">multiplicar</button>
+<button id="di">dividir</button>
+<button id="res">resto de divisão</button>
+<div id="mais"></div>
+<div id="tir"></div>
+<div id="ti"></div>
+<div id="vi"></div>
+<div id="to"></div>
+</center>
+</body>
+</html>

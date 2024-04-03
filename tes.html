@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="raul" content="width=device-width, initial-scale=1">
+	<title>calculadora</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var resp
+			resp=0
+			$("div").text(resp)
+			$("#soma").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1+resp
+				$("div").text(resp)
+			})
+			$("#menos").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=resp-n1
+				$("div").text(resp)
+			})
+			$("#mul").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1*resp
+				$("div").text(resp)
+			})
+			$("#divi").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1/resp
+				$("div").text(resp)
+			})
+			$("#re").click(function() {
+				n1 = parseInt($("#n1").val())
+				resp=n1%resp
+				$("div").text(resp)
+			})
+            $("#li").click(function() {
+            	$("#n1").val("")
+            	resp=0
+            	$("div").text(resp)
+            }) 
+		})
+	</script>
+</head>
+<body>
+	<center>
+<input type="number" id="n1">
+<button id="soma">+</button>
+<button id="menos">-</button>
+<button id="mul">*</button>
+<button id="divi">/</button>
+<button id="re">%</button>
+<button type="reset" id="li">limpar</button>
+<div></div>
+</center>
+</body>
+</html>

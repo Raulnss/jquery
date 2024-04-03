@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var n1
+            var n2
+            var n3
+            var n4
+            var resp
+            var resp1
+            $("button").click(function() {
+                n1 = parseInt($("#n1").val())
+                n2 = parseInt($("#n2").val())
+                n3 = parseInt($("#n3").val())
+                n4 = parseInt($("#n4").val())
+                resp=(n2*n3)/n1
+                resp1=(n1*n4)/n2
+                if (n4==0) {
+                    $("div").text(resp+"%")
+                } else {
+                    $("div").text("o sistema não entendeu")
+                } if (n3==0) {
+                    $("div").text(resp1)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>regra de trés</h1>
+    troque o x por 0 <br>
+    <input type="text" id="n1" placeholder="numero">
+    <input type="text" id="n2" placeholder="100%"><br>
+    <input type="text" id="n3" placeholder="numero">
+    <input type="text" id="n4" placeholder="%">
+    <button>calcular</button>
+    <div></div>
+</body>
+</html>

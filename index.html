@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var texto1
+			var texto2
+			var resposta
+			$("button").click(function() {
+				texto1 = $("#texto1").val()
+				texto2 = $("#texto2").val()
+				$("div").text(texto1+" "+texto2);
+				$("#texto1").val("")
+				$("#texto2").val("")
+
+
+			})
+		})
+	</script>
+</head>
+<body>
+	<input type="text" id="texto1"><br>
+	<input type="text" id="texto2"><br>
+	<button>clicar</button><br>
+<div></div>
+</body>
+</html>

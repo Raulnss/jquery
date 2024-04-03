@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>fluxograma das cores </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var c
+            $("button").click(function() {
+                c = $("#c").val()
+                if (c=="marrom") {
+                    $("div").text("o preço do marrom è R$15,00")
+                } else {
+                    $("div").text("este item não esta disponivel")  
+                } if (c=="verde") {
+                    $("div").text("o preço do verde è R$20,00")
+                } if (c=="azul") {
+                    $("div").text("o preço do azul è R$40,00")                    
+                } if (c=="vermelho") {
+                    $("div").text("o preço do vermelho è R$80,00")
+                }
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>escreva uma cor e veja o preço</h1>
+  <input type="text" id="c">
+  <button>ver preço</button>
+  <div></div> 
+</body>
+</html>

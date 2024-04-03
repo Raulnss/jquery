@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma que faz divisao e resto </title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var n2
+			var resp
+			var resp2
+			$("button").click(function() {
+				n1 = parseInt($("#n1").val())
+				n2 = parseInt($("#n2").val())
+				resp=n1/n2
+				resp1=n1%n2
+				$("#di").text("a divisão é "+resp)
+				$("#re").text("o resto é "+resp1)
+				$("#n1").val("")
+				$("#n2").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="n1">
+<input type="text" id="n2">
+<button>clicar</button>
+<div id="di"></div>
+<div id="re"></div>
+</body>
+</html>

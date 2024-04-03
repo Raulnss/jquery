@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fluxograma de media de notas</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var n1
+			var n2
+			var n3
+			var n4
+			var n5
+			var resp
+			$("button").click(function() {
+				n1 = parseInt($("#n1").val())
+				n2 = parseInt($("#n2").val())
+				n3 = parseInt($("#n3").val())
+				n4 = parseInt($("#n4").val())
+				n5 = parseInt($("#n5").val())
+				resp=(n1+n2+n3+n4+n5)/5
+				$("div").text(resp)
+				$("#n1").val("")
+				$("#n2").val("") 
+				$("#n3").val("")
+				$("#n4").val("")
+				$("#n5").val("")
+			})
+		})
+	</script>
+</head>
+<body>
+<input type="text" id="n1">
+<input type="text" id="n2">
+<input type="text" id="n3">
+<input type="text" id="n4">
+<input type="text" id="n5">
+<button>clicar</button>
+<div></div>
+</body>
+</html>
